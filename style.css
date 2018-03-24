@@ -64,10 +64,32 @@ grid-column: 1 / span 2;
   grid-row-start: 2;
   grid-row-end: 2;
   grid-column: 1 / span 2;
-  z-index: 1;
+  width:100%;
+height:100%;
+  display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
+.button {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: #FCF8CD;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  width:150px;
+height:30px;
+}
 
 /* Flavors */
 
@@ -263,6 +285,7 @@ span {
   position: absolute;
   height: 65%;
   width: 50%;
+  margin-top: 5%;
 }
 
 .middle {
@@ -545,4 +568,42 @@ h2 {
   font-family: SimSun-ExtB;
   padding-top: 20px;
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1700px) {
+  #flavors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .promo-ice {
+    height: 100%;
+    background: url("./Gallery/cards.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.image-shakes {
+  height: 100%;
+  background: url("./Gallery/gif.gif") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+.outer {
+  height: 50%;
+  margin-top: 15%;
+}
+#about p {
+  font-size: 10pt;
+}
 }
