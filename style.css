@@ -12,7 +12,7 @@ body {
 
 @font-face {
   font-family: "Krinkes Regular PERSONAL USE";
-  src: url("/Computer/Downloads/krinkes/KrinkesRegularPERSONAL.ttf");
+  src: url("./KrinkesRegularPERSONAL.ttf");
 }
 
 /* Header Location and Hours */
